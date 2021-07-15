@@ -18,6 +18,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* ExempleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ExempleTests.m */; };
 		67D09BCB749DD1E845A3772C /* libPods-Exemple-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F10F72B96E545727C405B8D /* libPods-Exemple-tvOS.a */; };
 		9F9E6DA37E7A0578361013E8 /* libPods-Exemple-ExempleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DC617E5A11104A61ABDF85 /* libPods-Exemple-ExempleTests.a */; };
+		B1844C52269FF3A70076BF8B /* JitsiMeetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1844C51269FF3A70076BF8B /* JitsiMeetSDK.framework */; };
 		E4431F016FF08BB7823CA1A8 /* libPods-Exemple.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF98C84FB00F9CE097E54171 /* libPods-Exemple.a */; };
 		F54A96E13AB8F35D4556D262 /* libPods-Exemple-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F50CDDC7C45F7151B06EA889 /* libPods-Exemple-tvOSTests.a */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,10 @@
 		9B361DD5B9615AC14B38C155 /* Pods-Exemple-ExempleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exemple-ExempleTests.release.xcconfig"; path = "Target Support Files/Pods-Exemple-ExempleTests/Pods-Exemple-ExempleTests.release.xcconfig"; sourceTree = "<group>"; };
 		A04822476691AE6CA7ED0C7A /* Pods-Exemple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exemple.debug.xcconfig"; path = "Target Support Files/Pods-Exemple/Pods-Exemple.debug.xcconfig"; sourceTree = "<group>"; };
 		ADB524F05B0B43329D35602E /* Pods-Exemple-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exemple-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Exemple-tvOS/Pods-Exemple-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		B1844C3B269F6EA90076BF8B /* JitsiMeetSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = JitsiMeetSDK.xcframework; path = Pods/JitsiMeetSDK/Frameworks/JitsiMeetSDK.xcframework; sourceTree = "<group>"; };
+		B1844C3F269F6EB00076BF8B /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = Pods/JitsiMeetSDK/Frameworks/WebRTC.xcframework; sourceTree = "<group>"; };
+		B1844C43269F6F400076BF8B /* JitsiMeetSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JitsiMeetSDK.framework; path = Pods/JitsiMeetSDK/Frameworks/JitsiMeetSDK.framework; sourceTree = "<group>"; };
+		B1844C51269FF3A70076BF8B /* JitsiMeetSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JitsiMeetSDK.framework; path = Pods/JitsiMeetSDK/Frameworks/JitsiMeetSDK.framework; sourceTree = "<group>"; };
 		E6C75CAC2D4BBC15322DEDD0 /* Pods-Exemple-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exemple-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Exemple-tvOS/Pods-Exemple-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -98,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1844C52269FF3A70076BF8B /* JitsiMeetSDK.framework in Frameworks */,
 				F54A96E13AB8F35D4556D262 /* libPods-Exemple-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +145,11 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1844C51269FF3A70076BF8B /* JitsiMeetSDK.framework */,
+				B1844C3F269F6EB00076BF8B /* WebRTC.xcframework */,
+				B1844C3B269F6EA90076BF8B /* JitsiMeetSDK.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				B1844C43269F6F400076BF8B /* JitsiMeetSDK.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				EF98C84FB00F9CE097E54171 /* libPods-Exemple.a */,
 				33DC617E5A11104A61ABDF85 /* libPods-Exemple-ExempleTests.a */,
@@ -161,7 +171,6 @@
 				5F201878D89B04564A7E40BA /* Pods-Exemple-tvOSTests.debug.xcconfig */,
 				90AF382B7251D92F5F1B8158 /* Pods-Exemple-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,6 +303,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = BGUJKSMT75;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -375,7 +385,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -672,7 +682,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BGUJKSMT75;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/JitsiMeetSDK/Frameworks",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
@@ -684,7 +699,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.borderfreee.livejitsi22;
 				PRODUCT_NAME = Exemple;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -699,6 +714,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BGUJKSMT75;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/JitsiMeetSDK/Frameworks",
+				);
 				INFOPLIST_FILE = Exemple/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -706,7 +727,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.borderfreee.livejitsi22;
 				PRODUCT_NAME = Exemple;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -780,6 +801,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/JitsiMeetSDK/Frameworks",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Exemple-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -807,6 +832,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/JitsiMeetSDK/Frameworks",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Exemple-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -853,6 +882,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -913,6 +943,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
